@@ -5,6 +5,7 @@
 import Foundation
 import OpenTimelineIO_objc
 
+@objc(OTIOMarker)
 public class Marker : SerializableObjectWithMetadata {
     override public init() {
         super.init(otio_new_marker())
@@ -43,7 +44,7 @@ public class Marker : SerializableObjectWithMetadata {
                   metadata: nil as Metadata.Dictionary?)
     }
 
-    public var color: String {
+    @objc public var color: String {
         get { return marker_get_color(self) }
         set { marker_set_color(self, newValue) }
     }
