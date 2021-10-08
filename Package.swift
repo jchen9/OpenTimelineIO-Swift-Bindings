@@ -22,7 +22,7 @@ let package = Package(
             exclude: [
                 "CONTRIBUTORS.md", "NOTICE.txt", "CONTRIBUTING.md", "LICENSE.txt", "CODE_OF_CONDUCT.md",
                 "OTIO_CLA_Corporate.pdf", "OTIO_CLA_Individual.pdf",
-                "README.md", "LICENSE", "Sources/shims/optionallite-shim.cpp", "Sources/shims/otio_header_root-shim.cpp",
+                "README.md", "Sources/shims/optionallite-shim.cpp", "Sources/shims/otio_header_root-shim.cpp",
                 "Examples", "OpenTimelineIO", "Tests", "Sources/objc", "Sources/swift"],
             sources: ["Sources/shims/any-shim.cpp"],
             publicHeadersPath:"OpenTimelineIO/src/deps"),
@@ -32,7 +32,7 @@ let package = Package(
             exclude: [
                 "CONTRIBUTORS.md", "NOTICE.txt", "CONTRIBUTING.md", "LICENSE.txt", "CODE_OF_CONDUCT.md",
                 "OTIO_CLA_Corporate.pdf", "OTIO_CLA_Individual.pdf",
-                "README.md", "LICENSE", "Sources/shims/any-shim.cpp", "Sources/shims/otio_header_root-shim.cpp",
+                "README.md", "Sources/shims/any-shim.cpp", "Sources/shims/otio_header_root-shim.cpp",
                 "Examples", "OpenTimelineIO", "Tests", "Sources/objc", "Sources/swift"],
             sources: ["Sources/shims/optionallite-shim.cpp"],
             publicHeadersPath:"OpenTimelineIO/src/deps/optional-lite/include"),
@@ -42,7 +42,7 @@ let package = Package(
             exclude: [
                 "CONTRIBUTORS.md", "NOTICE.txt", "CONTRIBUTING.md", "LICENSE.txt", "CODE_OF_CONDUCT.md",
                 "OTIO_CLA_Corporate.pdf", "OTIO_CLA_Individual.pdf",
-                "README.md", "LICENSE", "Sources/shims/any-shim.cpp", "Sources/shims/optionallite-shim.cpp",
+                "README.md", "Sources/shims/any-shim.cpp", "Sources/shims/optionallite-shim.cpp",
                 "Examples", "OpenTimelineIO", "Tests", "Sources/objc", "Sources/swift"],
             sources: ["Sources/shims/otio_header_root-shim.cpp"],
             publicHeadersPath:"OpenTimelineIO/src"),
@@ -58,7 +58,7 @@ let package = Package(
         .target(name: "OpenTimelineIO_CXX",
             dependencies: ["OpenTime_CXX", "any", "optionallite"],
             path: "OpenTimelineIO/src/OpenTimelineIO",
-            exclude: [ "main.cpp", "CMakeLists.txt" ],
+            exclude: [ "CMakeLists.txt" ],
             sources: ["."],
             publicHeadersPath: ".",
             cxxSettings: [  .headerSearchPath("."),
